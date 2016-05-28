@@ -226,7 +226,7 @@ public class WeatherContentProvider extends ContentProvider {
                 throw new UnsupportedOperationException("Unknown uri" + uri);
         }
     }
-
+    // delete rows in database
     @Override
     public int delete(Uri uri, String selection, String[] selectionArgs) {
         int rowsDeleted = 0;
